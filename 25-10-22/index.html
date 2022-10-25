@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
   </head>
   <body>
-    <h1>hdaihdsa</h1>
+    <form>
+      <div class="factors">
+        <label for="a"></label> <input type="text" id="a" />
+        <label for="b"></label> <input type="text" id="b" />
+      </div>
+      <div class="operazioni">
+        <div class="add__sub">
+          <input type="button" value="+" onclick="addizione()" />
+          <input type="button" value="-" onclick="sottrazione()" />
+        </div>
+        <div class="molt__div">
+          <input type="button" value="*" onclick="moltiplicazione()" />
+          <input type="button" value="/" onclick="divisione()" />
+        </div>
+      </div>
+      <div class="result">
+        <label for="Risultato"></label><input type="text" id="risultato" />
+      </div>
+    </form>
   </body>
 </html>
