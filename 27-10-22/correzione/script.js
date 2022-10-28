@@ -59,16 +59,38 @@ Object.freeze(character.firstName, character.lastName);
 
 // Esercizio Avanzato // NON RIUSCITO, PERCHE'?
 
-// function calculator(x, ...y) {
-//  switch (x) {
+function calculator(x, y) {
+  console.log("X: ", x);
+  console.log("Y: ", y);
+  // OCCHIO ALLO SPREAD OPERATOR
+  console.log("Y: ", ...y);
 
-// METODO AVANZATO
-const sum = (...args) => args.reduce((x, y) => x + y);
+  let z = 0;
+  switch (x) {
+    case "+":
+      for (num of y) {
+        z += num;
+      }
+      return z;
 
-const subtract = (...args) => args.reduce((x, y) => x - y);
+    case "-":
+      z = y[0];
+      for (let i = 1; i < y.length; i++) {
+        z = z - y[i];
+      }
+      return z;
 
-const multiply = (...args) => args.reduce((x, y) => x * y);
+    case "*":
+      z = y[0];
+      for (let i = 1; i < y.length; i++) {
+        z = z * y[i];
+      }
+      return z;
 
-const divide = (...args) => args.reduce((x, y) => x / y);
+    case "/":
+      z = y[0] / y[1];
+      return z;
+  } //
+}
 
-console.log(multiply(10, 10, 10, 10)); // Example: (*operation(..values..))
+console.log(calculator("*", [10, 12, 14, 12, 34345, 35]));

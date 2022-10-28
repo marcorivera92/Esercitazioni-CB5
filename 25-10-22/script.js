@@ -4,6 +4,8 @@ function addizione() {
   document.getElementById("risultato").value = a + b;
 
   console.log("risultato addizione: ", (value = a + b));
+
+  // 1.0* = converte stringa -> numero
 }
 
 function sottrazione() {
