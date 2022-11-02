@@ -1,0 +1,33 @@
+body {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card_content {
+  background-color: rgb(231, 235, 231);
+  border: 1px solid rgb(0, 97, 0);
+  width: 400px;
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_content img {
+  max-width: 220px;
+  max-height: 283px;
+}
+
+.card_content h2 {
+  text-transform: uppercase;
+}
