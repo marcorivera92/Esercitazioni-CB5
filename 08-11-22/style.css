@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+body {
+  background-color: rgb(196, 52, 52);
+  color: black;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+
+.pokemon_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card_block {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.9);
+}
+
+.card {
+  border-radius: 100%;
+  width: 125px;
+  height: 125px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+}
+.card_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_info h4 {
+  background-color: rgb(223, 223, 223);
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.1);
+  color: black;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  width: 50px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
