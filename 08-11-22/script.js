@@ -1,11 +1,25 @@
 const bodyEl = document.querySelector("body");
 const pokemonContainer = document.querySelector(".pokemon_container");
 
+// for (let i = 1; i <= 150; i++) {
+//   fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
+//     .then((res) => res.json())
+//     .then((pokemon) => createPokemonCard(pokemon));
+// }
+
+// FETCH + PROMISE
+const urlArray = []; // creo array vuoto che conterrà gli url singoli
 for (let i = 1; i <= 150; i++) {
-  fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
-    .then((res) => res.json())
-    .then((pokemon) => createPokemonCard(pokemon));
+  urlArray.push(`https://pokeapi.co/api/v2/pokemon/${i}`);
 }
+
+let request = urlArray.map((url) => {
+  return fetch(url).then((res) => res.json());
+});
+
+Promise.all(request).then((res) =>
+  res.map((pokemon) => createPokemonCard(pokemon))
+);
 
 const PokedexEl = document.querySelector("pokemon_container");
 
