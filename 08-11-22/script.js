@@ -24,11 +24,22 @@ const createPokemonCard = (data) => {
   cardImgEl.setAttribute("src", data.sprites["front_default"]);
   cardImgEl.setAttribute("alt", data.name);
   cardNameEl.textContent = data.name;
-  cardIdEl.textContent = "#" + data.id;
+  cardIdEl.textContent = "#" + createId(data.id);
   cardTypeEl.textContent = "Type: " + data.types.map((type) => type.type.name);
 
   const colorCard = colors[data.types[0].type.name];
   cardBlock.style.background = colorCard;
+
+  // assegnare "0" agli ID
+  function createId(id) {
+    if (!id) return null;
+    if (id < 10) {
+      return `00${id}`;
+    } else if (id < 100) {
+      return `0${id}`;
+    }
+    return id;
+  }
 
   cardEl.append(cardImgEl);
   cardDesc.append(cardIdEl, cardNameEl, cardTypeEl);
@@ -38,20 +49,22 @@ const createPokemonCard = (data) => {
 };
 
 const colors = {
-  electric: "#FCF7DE",
-  water: "#DEF3FD",
-  ground: "#f4e7da",
-  rock: "#d5d5d4",
-  fairy: "#fceaff",
-  poison: "#98d7a5",
-  bug: "#f8d5a3",
-  dragon: "#97b3e6",
-  psychic: "#eaeda1",
-  flying: "#F5F5F5",
-  fighting: "#E6E0D4",
-  normal: "#F5F5F5",
-  fire: "#FDDFDF",
-  grass: "#DEFDE0",
-  ghost: "#705898",
-  ice: "#98d8d8",
+  electric: "#F7D02C",
+  water: "#6390F0",
+  ground: "#E2BF65",
+  rock: "#B6A136",
+  fairy: "#D685AD",
+  poison: "#A33EA1",
+  bug: "#A6B91A",
+  dragon: "#6F35FC",
+  psychic: "#F95587",
+  flying: "#A98FF3",
+  fighting: "#C22E28",
+  normal: "#A8A77A",
+  fire: "#EE8130",
+  grass: "#7AC74C",
+  ghost: "#735797",
+  ice: "#96D9D6",
+  dark: "#705746",
+  steel: "#B7B7CE",
 };
