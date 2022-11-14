@@ -1,0 +1,10 @@
+1. layout creation
+2. fetch data -> URL with variable index [i] -> load first fetch at first window loading
+3. get html elements by ID/Classes
+4. create dynamic card -> append to body in html
+5. assing limit range to index [i]
+6. manipulate URL's index through Switch function method (i-- , i++)
+7. create 2 buttons for Prev / Next event
+8. assign buttons to fetch the Prev & Next URL 
+9. disable buttons after limit [i] reached
+10. loader event between each fetch
