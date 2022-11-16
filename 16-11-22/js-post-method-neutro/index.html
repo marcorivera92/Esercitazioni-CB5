@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Searcher</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="form_wrapper" name="pokemon">
+      <div class="insert_pokemon">
+        <h2>Insert Pokemon</h2>
+        <div class="inputs"></div>
+        <input
+          class="input_name"
+          type="text"
+          name="poke_name"
+          placeholder="Insert Name... (ex: Bulbasaur)"
+        />
+        <input
+          class="input_type"
+          type="text"
+          name="poke_type"
+          placeholder="Insert Type... (ex: grass)"
+        />
+        <input class="submit" type="submit" value="Submit" />
+
+        <div class="divider">
+          <img src="./images/pokeball.png" alt="" srcset="" />
+        </div>
+      </div>
+
+      <div class="display_list">
+        <h2>Pokemon List</h2>
+        <ul class="pokemon_list"></ul>
+      </div>
+    </form>
+    <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./js/utils.js"></script>
+  </body>
+</html>

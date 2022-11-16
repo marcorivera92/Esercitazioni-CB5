@@ -1,0 +1,59 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "name": "Bulbasaur",
+      "type": "grass"
+    },
+    {
+      "id": "f743bd16-a6fb-4d6b-a35d-7d3741a341c6",
+      "name": "Ivysaur",
+      "type": "grass"
+    },
+    {
+      "id": "46297386-49ef-48e4-b82e-d8c7daa93493",
+      "name": "Venosaur",
+      "type": "grass"
+    },
+    {
+      "id": "fe9129b2-cb93-4a29-9199-620e94cb8712",
+      "name": "Charmender",
+      "type": "fire"
+    },
+    {
+      "id": "b67313b6-b310-4937-adde-6b2337c91e04",
+      "name": "Charmeleon",
+      "type": "fire"
+    },
+    {
+      "id": "b8959810-5aaf-4a10-bf4f-ec811e75b389",
+      "name": "Charizard",
+      "type": "fire"
+    },
+    {
+      "id": "8014970d-1f27-4ffe-be83-8dee60425be6",
+      "name": "Squirtle",
+      "type": "water"
+    },
+    {
+      "id": "459adae8-3bf2-41b1-91a0-f341edc4402c",
+      "name": "",
+      "type": ""
+    },
+    {
+      "id": "245ef923-540c-44f8-8329-641f4d647373",
+      "name": "",
+      "type": ""
+    },
+    {
+      "id": "2e39d4b7-5a4a-4315-a908-efc8fd5f03da",
+      "name": "",
+      "type": ""
+    },
+    {
+      "id": "092befbf-5ac9-474a-b8ad-10ed619e5057",
+      "name": "",
+      "type": ""
+    }
+  ]
+}
