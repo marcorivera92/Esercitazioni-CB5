@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="pokemon-logo" src="./images/pokeball.png" alt="pokemonlogo" />
+    </header>
+    <div class="form-container">
+      <h2>Insert Pokémon</h2>
+      <form name="pokemon">
+        <input type="text" name="pkmName" placeholder="Name" required />
+        <input type="text" name="pkmType" placeholder="Type" required />
+        <input class="submit" type="submit" />
+      </form>
+
+      <form name="pokemon_edit">
+        <input type="text" name="pkmId" placeholder="ID" required />
+        <input type="text" name="pkmName" placeholder="Name" required />
+        <input type="text" name="pkmType" placeholder="Type" required />
+        <input class="edit" type="submit" value="Edit" />
+      </form>
+    </div>
+    <div class="gallery">
+      <div class="poke-title">
+        <h2>Pokémon List</h2>
+      </div>
+      <div class="poke-gallery"></div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/utils.js"></script>
+  </body>
+</html>
