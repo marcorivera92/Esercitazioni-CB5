@@ -1,0 +1,48 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: gainsboro;
+}
+
+.form_el {
+  padding: 10px;
+  background-color: rgb(252, 249, 245);
+
+  border-radius: 6px;
+  transition: all 0.35s;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.form_el:focus::placeholder {
+  color: transparent;
+}
+
+.btn-submit {
+  padding: 10px;
+  background-color: rgb(10, 144, 246);
+  border: none;
+  border-radius: 6px;
+  transition: all 0.35s;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: rgb(10, 144, 246);
+  font-weight: bold;
+}
+
+.form_el:hover {
+  background-color: rgb(221, 221, 221);
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+form,
+.wrapper {
+  text-align: center;
+}
