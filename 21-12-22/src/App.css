@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background: hsl(227, 10%, 10%);
+  color: #fff;
+  font-family: 1em "Fira Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.header_img {
+  width: 10em;
+  height: auto;
+}
