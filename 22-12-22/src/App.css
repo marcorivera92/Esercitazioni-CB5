@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+body {
+  background: hsl(227, 10%, 10%);
+  color: #fff;
+  font-family: 1em "Fira Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.header_img {
+  width: 10em;
+  height: auto;
+}

@@ -1,0 +1,26 @@
+.header {
+  margin: 0 0 2rem;
+  padding: 0.5em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar ul {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #f3f3f3;
+}

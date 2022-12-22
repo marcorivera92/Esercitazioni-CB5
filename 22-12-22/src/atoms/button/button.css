@@ -1,0 +1,30 @@
+.btn {
+  background: none;
+  border-radius: 2px;
+  border: 2px solid;
+  color: rgb(61, 156, 245);
+  cursor: pointer;
+  font-weight: bold;
+  height: 40px;
+  margin-top: 2em;
+  text-transform: capitalize;
+  transition: 0.25s;
+  width: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  border-color: rgb(61, 156, 245);
+  box-shadow: inset 8em 0 0 0 rgb(61, 156, 245);
+  color: #f3f3f3;
+}
+
+.btn--variant-red {
+  color: rgb(242, 33, 33);
+}
+
+.btn--variant-red:hover,
+.btn--variant-red:focus {
+  border-color: rgb(242, 33, 33);
+  box-shadow: inset 8em 0 0 0 rgb(242, 33, 33);
+}
