@@ -1,0 +1,36 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: #161a2b;
+  width: 400px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.todo-list li {
+  width: 100%;
+  padding: 0.5rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  color: #f3f3f3;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.314);
+}
+
+.form-input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
