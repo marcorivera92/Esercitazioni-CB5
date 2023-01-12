@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dce2e4;
+  font-family: "Verdana", "sans-serif";
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 2rem auto;
+  width: min(80%, 60rem);
+}
+
+.form-select {
+  width: 150px;
+  height: 20px;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-select:focus {
+  outline: none;
+}

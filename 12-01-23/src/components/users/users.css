@@ -1,0 +1,22 @@
+.header-title {
+  font-size: 2rem;
+}
+
+.users-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn > button {
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.avatar {
+  width: 100px;
+  height: auto;
+}

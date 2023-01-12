@@ -1,0 +1,16 @@
+.header-title {
+  font-size: 2rem;
+}
+
+.blood-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn > button {
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid black;
+}
