@@ -1,0 +1,46 @@
+.NewPost {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--twitter-background);
+  padding-right: 10px;
+}
+
+.NewPost > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.user_avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  background-color: rgb(227, 230, 6);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.postBox__input {
+  padding: 20px;
+  display: flex;
+}
+
+.postBox__input > input {
+  margin-left: 20px;
+  font-size: 1rem;
+  border: none;
+}
+
+.postBox__input > input:focus {
+  outline: none;
+}
+
+.newPost__button {
+  background-color: var(--twitter-color);
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+  cursor: pointer;
+}
