@@ -1,0 +1,9 @@
+.FriendsList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 20px 0 20px;
+  gap: 20px;
+  border-bottom: 1px solid var(--twitter-background);
+  overflow-x: scroll;
+}

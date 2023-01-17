@@ -1,10 +1,12 @@
 .Feed {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
+  padding-top: 10px;
+
   /* border-right: 1px solid var(--twitter-background); */
   /* min-width: fit-content; */
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .feed__header {
@@ -19,4 +21,19 @@
 .feed__header > h2 {
   font-size: 20px;
   font-weight: 800;
+}
+
+.btn-post__mobile {
+  position: fixed;
+  background-color: var(--twitter-color);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  right: 0;
+  transform: translateY(280px);
+  text-align: center;
+  cursor: pointer;
 }

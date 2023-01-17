@@ -1,0 +1,25 @@
+.HeaderMobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  /* border: 1px solid var(--twitter-background); */
+  padding: 15px 20px;
+}
+
+.user_avatar--header {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: rgb(227, 230, 6);
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.twitter-icon {
+  color: var(--twitter-color);
+}
+
+.settings-icon {
+  cursor: pointer;
+}

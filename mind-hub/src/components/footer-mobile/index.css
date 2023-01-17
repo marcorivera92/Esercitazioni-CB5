@@ -1,0 +1,26 @@
+.FooterMobile {
+  box-sizing: border-box;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  z-index: 100;
+  border: 1px solid var(--twitter-background);
+  padding: 0px 40px 40px 40px;
+  width: 100%;
+}
+
+.footer-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.65rem;
+}
+
+.home-icon,
+.search-icon,
+.camera-icon,
+.notification-icon,
+.chat-icon {
+  cursor: pointer;
+}
