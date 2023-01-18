@@ -1,6 +1,6 @@
 .FooterMobile {
-  box-sizing: border-box;
   position: sticky;
+  box-sizing: border-box;
   bottom: 0;
   left: 0;
   background-color: white;
@@ -23,4 +23,10 @@
 .notification-icon,
 .chat-icon {
   cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .FooterMobile {
+    display: none;
+  }
 }

@@ -7,3 +7,20 @@
   border-bottom: 1px solid var(--twitter-background);
   overflow-x: scroll;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.FriendsList::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.FriendsList {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+@media (min-width: 800px) {
+  .FriendsList {
+    display: none;
+  }
+}

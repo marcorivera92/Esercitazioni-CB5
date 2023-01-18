@@ -1,9 +1,9 @@
-import "./index.css";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import CameraEnhanceOutlinedIcon from "@mui/icons-material/CameraEnhanceOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import MailOutlineOutlinedIcon from "@mui/icons-material/MailOutlineOutlined";
+import "./index.css";
 
 const FooterMobile = () => {
   return (

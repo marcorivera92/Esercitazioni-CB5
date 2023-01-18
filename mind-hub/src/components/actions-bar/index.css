@@ -1,0 +1,21 @@
+.ActionsBar {
+  box-sizing: border-box;
+  padding: 10px 0 20px 20px;
+  color: var(--twitter-color);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon-one,
+.icon-two,
+.icon-three,
+.icon-four,
+.icon-five,
+.icon-six {
+  cursor: pointer;
+}
+
+.desktop-variant {
+  padding: 10px 0 0 75px;
+}

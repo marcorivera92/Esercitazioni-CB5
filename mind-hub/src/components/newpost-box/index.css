@@ -1,7 +1,8 @@
 .NewPost {
   padding-bottom: 10px;
-  border-bottom: 8px solid var(--twitter-background);
+  border-bottom: 1px solid var(--twitter-background);
   padding-right: 10px;
+  flex: 0.2 1 0;
 }
 
 .NewPost > form {
@@ -32,15 +33,14 @@
   outline: none;
 }
 
-.newPost__button {
-  background-color: var(--twitter-color);
-  border: none;
-  color: white;
-  font-weight: 900;
-  border-radius: 30px;
-  width: 80px;
-  height: 40px;
-  margin-top: 20px;
-  margin-left: auto;
-  cursor: pointer;
+.postBox__footer {
+  display: flex;
+  border-top: 1px solid var(--twitter-background);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+  .NewPost {
+    display: none;
+  }
 }

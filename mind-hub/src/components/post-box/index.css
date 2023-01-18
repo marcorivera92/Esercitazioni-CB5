@@ -36,7 +36,7 @@
 .post__username {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
 }
 
 .post__username h3 {
@@ -49,6 +49,10 @@
   color: #808080;
   font-weight: 600;
   margin: 0;
+}
+
+.verified-icon {
+  color: var(--twitter-color);
 }
 
 .post__footer {

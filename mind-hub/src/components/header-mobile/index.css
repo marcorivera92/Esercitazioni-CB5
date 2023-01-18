@@ -23,3 +23,9 @@
 .settings-icon {
   cursor: pointer;
 }
+
+@media (min-width: 800px) {
+  .HeaderMobile {
+    display: none;
+  }
+}

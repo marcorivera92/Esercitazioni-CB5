@@ -7,10 +7,45 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
   max-width: 1300px;
+}
 
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* padding: 0 10px; */
+.modal-mobile {
+  display: none;
+}
+
+.modal-active {
+  display: block;
+  transition: all 1s ease-in-out;
+}
+
+.btn-post__mobile {
+  position: fixed;
+  background-color: var(--twitter-color);
+  color: white;
+  border: none;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  right: 0;
+  transform: translateY(480px);
+  text-align: center;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 800px) {
+  .App {
+    flex-direction: row;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+
+  .btn-post__mobile {
+    display: none;
+  }
 }
