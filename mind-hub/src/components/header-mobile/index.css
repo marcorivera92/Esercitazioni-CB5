@@ -18,6 +18,7 @@
 
 .twitter-icon {
   color: var(--twitter-color);
+  cursor: pointer;
 }
 
 .settings-icon {
@@ -27,5 +28,9 @@
 @media (min-width: 800px) {
   .HeaderMobile {
     display: none;
+  }
+
+  .twitter-icon:hover {
+    color: #4aa6e0;
   }
 }

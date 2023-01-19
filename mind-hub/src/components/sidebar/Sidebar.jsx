@@ -1,4 +1,5 @@
 import SidebarOption from "../../atoms/sidebar-option/SidebarOption";
+import ButtonTweet from "../../atoms/button-tweet";
 
 import TwitterIcon from "@mui/icons-material/Twitter";
 import HomeIcon from "@mui/icons-material/Home";
@@ -9,32 +10,53 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltOutlinedIcon from "@mui/icons-material/ListAltOutlined";
 import PermIdentityOutlinedIcon from "@mui/icons-material/PermIdentityOutlined";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
-
+import VerifiedIcon from "@mui/icons-material/Verified";
 import "./index.css";
-import ButtonTweet from "../../atoms/button-tweet";
 
 const Sidebar = () => {
   return (
     <div className="Sidebar">
-      <TwitterIcon
-        className="twitter-icon"
-        fontSize="medium"
-        sx={{ fontSize: "2rem" }}
-      />
+      <div className="sidebar-menu">
+        <TwitterIcon
+          className="twitter-icon"
+          fontSize="medium"
+          sx={{ fontSize: "2rem" }}
+        />
+        <SidebarOption active Icon={HomeIcon} text="Home" />
+        <SidebarOption Icon={TagOutlinedIcon} text="Explore" />
+        <SidebarOption
+          Icon={NotificationsNoneOutlinedIcon}
+          text="Notifications"
+        />
+        <SidebarOption Icon={MailOutlineOutlinedIcon} text="Messages" />
+        <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
+        <SidebarOption Icon={ListAltOutlinedIcon} text="Lists" />
+        <SidebarOption Icon={PermIdentityOutlinedIcon} text="Profile" />
+        <SidebarOption Icon={MoreHorizOutlinedIcon} text="More" />
 
-      <SidebarOption active Icon={HomeIcon} text="Home" />
-      <SidebarOption Icon={TagOutlinedIcon} text="Explore" />
-      <SidebarOption
-        Icon={NotificationsNoneOutlinedIcon}
-        text="Notifications"
-      />
-      <SidebarOption Icon={MailOutlineOutlinedIcon} text="Messages" />
-      <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
-      <SidebarOption Icon={ListAltOutlinedIcon} text="Lists" />
-      <SidebarOption Icon={PermIdentityOutlinedIcon} text="Profile" />
-      <SidebarOption Icon={MoreHorizOutlinedIcon} text="More" />
+        <ButtonTweet variant="wide-variant" />
 
-      <ButtonTweet variant="wide-variant" />
+        <div className="user-account">
+          <div className="hover-shadow">
+            <img
+              src="/images/batman.png"
+              alt="user_avatar"
+              className="user_avatar__big"
+            />
+            <div className="user-account__text">
+              <h3 className="user-account__name">
+                Marco
+                <VerifiedIcon
+                  className="verified-icon"
+                  sx={{ fontSize: "1.1rem" }}
+                />
+              </h3>
+
+              <p>@marco_webdev</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

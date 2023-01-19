@@ -8,7 +8,7 @@ const Modal = ({ children }) => {
         {children}
         <ActionsBar />
       </div>
-      <div className="modal-overlay"></div>
+      {/* <div className="modal-overlay"></div> */}
     </div>
   );
 };

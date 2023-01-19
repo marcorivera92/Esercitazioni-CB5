@@ -2,13 +2,19 @@ import { useState } from "react";
 import ButtonTweet from "../../atoms/button-tweet";
 import "./index.css";
 
-const NewPostMobile = () => {
+const NewPostMobile = ({ setModalActive }) => {
   const [newPost, setNewPost] = useState("");
 
   // EVENTS
   const sendPost = (e) => {
     e.preventDefault();
     setNewPost("");
+    setModalActive(false);
+  };
+
+  const closeModal = (e) => {
+    e.preventDefault();
+    setModalActive(false);
   };
 
   const postHandler = (e) => {
@@ -19,14 +25,16 @@ const NewPostMobile = () => {
     <div className="NewPostMobile">
       <form>
         <div className="buttons">
-          <button className="cancel">Cancel</button>
+          <button className="cancel" onClick={closeModal}>
+            Cancel
+          </button>
           <ButtonTweet TweetHandler={sendPost} />
         </div>
 
         <div className="postBox__input">
           <img
-            src="https://api.dicebear.com/5.x/bottts/svg?seed=Loki"
-            alt="avatar"
+            src="/images/batman.png"
+            alt="user_avatar"
             className="user_avatar"
           />
           <textarea

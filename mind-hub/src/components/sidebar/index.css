@@ -1,10 +1,59 @@
 .Sidebar {
   border-right: 1px solid var(--twitter-background);
-  flex: 0.25;
   margin-top: 10px;
   padding-left: 20px;
-  border: 2px solid red;
-  /* padding-right: 20px; */
+}
+
+.user-account {
+  padding: 65px 0 0 0;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.hover-shadow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-account__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 3px;
+}
+
+.user-account__name {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.user-account__text > h3 {
+  color: black;
+  font-weight: 700;
+  margin: 0;
+}
+
+.user-account__text > p {
+  color: #808080;
+  font-weight: 500;
+  margin: 0;
+}
+
+.user_avatar__big {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.hover-shadow:hover {
+  background-color: #e8f5fe;
+  border-radius: 30px;
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
 }
 
 /* MEDIA QUERIES */

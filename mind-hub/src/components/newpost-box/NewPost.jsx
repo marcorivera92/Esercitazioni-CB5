@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ButtonTweet from "../../atoms/button-tweet";
 import ActionsBar from "../actions-bar/ActionsBar";
+
 import "./index.css";
 
 const NewPost = () => {
@@ -19,8 +20,8 @@ const NewPost = () => {
       <form>
         <div className="postBox__input">
           <img
-            src="https://api.dicebear.com/5.x/bottts/svg?seed=Loki"
-            alt="avatar"
+            src="/images/batman.png"
+            alt="user-avatar"
             className="user_avatar"
           />
           <input

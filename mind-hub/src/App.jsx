@@ -23,7 +23,7 @@ function App() {
       <div className={`modal-mobile ${isModalActive ? "modal-active" : ""}  `}>
         {isModalActive && (
           <Modal>
-            <NewPostMobile />
+            <NewPostMobile setModalActive={setModalActive} />
           </Modal>
         )}
       </div>
@@ -32,7 +32,6 @@ function App() {
       <Sidebar />
       <Feed />
       <WidgetBar />
-      {/* <Sidebar /> */}
       <FooterMobile />
 
       <button onClick={modalHandler} className="btn-post__mobile">

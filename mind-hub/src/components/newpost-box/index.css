@@ -1,8 +1,5 @@
 .NewPost {
-  padding-bottom: 10px;
   border-bottom: 1px solid var(--twitter-background);
-  padding-right: 10px;
-  flex: 0.2 1 0;
 }
 
 .NewPost > form {
@@ -14,19 +11,19 @@
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  background-color: rgb(227, 230, 6);
   box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.4);
 }
 
 .postBox__input {
-  padding: 20px;
   display: flex;
+  padding: 20px;
 }
 
 .postBox__input > input {
   margin-left: 20px;
   font-size: 1rem;
   border: none;
+  width: 100%;
 }
 
 .postBox__input > input:focus {
@@ -36,6 +33,7 @@
 .postBox__footer {
   display: flex;
   border-top: 1px solid var(--twitter-background);
+  padding-bottom: 10px;
 }
 
 /* MEDIA QUERIES */

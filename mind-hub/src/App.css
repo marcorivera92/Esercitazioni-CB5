@@ -1,6 +1,9 @@
-body {
+:root {
   --twitter-color: #50b7f5;
   --twitter-background: #e6ecf0;
+}
+
+body {
   scroll-behavior: smooth;
 }
 
@@ -16,7 +19,6 @@ body {
 
 .modal-active {
   display: block;
-  transition: all 1s ease-in-out;
 }
 
 .btn-post__mobile {
@@ -38,11 +40,16 @@ body {
 
 @media (min-width: 800px) {
   .App {
-    flex-direction: row;
     height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding: 0 10px;
+    /* Grid Desktop Template */
+    display: grid;
+    grid-template-columns: 0.9fr 2fr 1.3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   }
 
   .btn-post__mobile {

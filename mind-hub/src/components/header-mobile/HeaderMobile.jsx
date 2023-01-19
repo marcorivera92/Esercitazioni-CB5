@@ -6,7 +6,7 @@ const HeaderMobile = () => {
   return (
     <div className="HeaderMobile">
       <img
-        src="https://api.dicebear.com/5.x/bottts/svg?seed=Loki"
+        src="/images/batman.png"
         alt="avatar"
         className="user_avatar--header"
       />

@@ -15,20 +15,20 @@ const ActionsBar = ({ variant }) => {
       }`}
     >
       <InsertPhotoOutlinedIcon
-        sx={{ fontSize: "1.8rem" }}
+        sx={{ fontSize: "1.6rem" }}
         className="icon-one"
       />
-      <GifBoxOutlinedIcon sx={{ fontSize: "1.8rem" }} className="icon-two" />
-      <BallotOutlinedIcon sx={{ fontSize: "1.8rem" }} className="icon-three" />
+      <GifBoxOutlinedIcon sx={{ fontSize: "1.6rem" }} className="icon-two" />
+      <BallotOutlinedIcon sx={{ fontSize: "1.6rem" }} className="icon-three" />
       <SentimentSatisfiedOutlinedIcon
-        sx={{ fontSize: "1.8rem" }}
+        sx={{ fontSize: "1.6rem" }}
         className="icon-four"
       />
       <PendingActionsOutlinedIcon
-        sx={{ fontSize: "1.8rem" }}
+        sx={{ fontSize: "1.6rem" }}
         className="icon-five"
       />
-      <FmdGoodOutlinedIcon sx={{ fontSize: "1.8rem" }} className="icon-six" />
+      <FmdGoodOutlinedIcon sx={{ fontSize: "1.6rem" }} className="icon-six" />
     </div>
   );
 };
