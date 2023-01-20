@@ -52,7 +52,7 @@ const Sidebar = () => {
                 />
               </h3>
 
-              <p>@marco_webdev</p>
+              <p>@notofromitaly</p>
             </div>
           </div>
         </div>

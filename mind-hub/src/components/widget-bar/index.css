@@ -53,6 +53,12 @@
   justify-content: center;
   gap: 5px;
   padding: 10px;
+  cursor: pointer;
+}
+
+.trends-wrapper:hover {
+  background-color: #e6eded;
+  transition: color 100ms ease-out;
 }
 
 .trends-wrapper > h4 {

@@ -6,18 +6,47 @@ import "./index.css";
 
 const WidgetBar = () => {
   const [widgetData, setWidgetData] = useState([]);
+  const [inputFilter, setInputFilter] = useState("");
+  const [defaultData, setDefaultData] = useState([]);
 
+  /* FETCH */
   useEffect(() => {
-    GET(`posts`).then(({ posts }) => setWidgetData(posts));
+    GET(`posts`).then(({ posts }) => {
+      setWidgetData(posts);
+      setDefaultData(posts);
+    });
   }, []);
 
+  /* FILTERED RESULTS */
+  useEffect(() => {
+    const filteredTags = defaultData.filter((post) => {
+      const tagsToString = post.tags.join();
+      return tagsToString.includes(inputFilter);
+    });
+
+    setWidgetData(filteredTags);
+  }, [inputFilter]);
+
+  /* EVENTS */
+  const onHandleFilter = (e) => {
+    e.preventDefault();
+    setInputFilter(e.target.value);
+  };
+
   return (
+    /* SEARCHBAR */
     <div className="WidgetBar">
       <div className="widgets__input">
         <SearchOutlinedIcon className="widgets__searchIcon" />
-        <input placeholder="Search Twitter" type="text" />
+        <input
+          placeholder="Search Twitter"
+          type="text"
+          value={inputFilter}
+          onChange={onHandleFilter}
+        />
       </div>
 
+      {/* CONTENT */}
       <div className="widget-content">
         <h3 className="widget-title"> Trends for you </h3>
 
@@ -35,3 +64,5 @@ const WidgetBar = () => {
   );
 };
 export default WidgetBar;
+
+// widgetData.filter((post) => post.tags.includes(inputFilter))

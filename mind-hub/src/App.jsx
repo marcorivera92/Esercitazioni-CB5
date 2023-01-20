@@ -12,6 +12,8 @@ import AddIcon from "@mui/icons-material/Add";
 import "./App.css";
 import WidgetBar from "./components/widget-bar/WidgetBar";
 
+/* TODO: Add Dark Mode functionality */
+
 function App() {
   const [isModalActive, setModalActive] = useState(false);
 
