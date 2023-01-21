@@ -1,18 +1,16 @@
 import { useState } from "react";
+// import useLocalStorage from "use-local-storage";
 import HeaderMobile from "./components/header-mobile/HeaderMobile";
 import Feed from "./components/feed/index";
 import FooterMobile from "./components/footer-mobile/FooterMobile";
 import FriendsList from "./components/stories-section/FriendsList";
 import Modal from "./components/modal/Modal";
 import NewPostMobile from "./components/newpost-mobile/NewPostMobile";
-import NewPost from "./components/newpost-box/NewPost";
 import Sidebar from "./components/sidebar/Sidebar";
 // Icons & Style
 import AddIcon from "@mui/icons-material/Add";
 import "./App.css";
 import WidgetBar from "./components/widget-bar/WidgetBar";
-
-/* TODO: Add Dark Mode functionality */
 
 function App() {
   const [isModalActive, setModalActive] = useState(false);
@@ -35,7 +33,6 @@ function App() {
       <Feed />
       <WidgetBar />
       <FooterMobile />
-
       <button onClick={modalHandler} className="btn-post__mobile">
         <AddIcon fontSize="medium" sx={{ fontSize: "1.6rem" }} />
       </button>

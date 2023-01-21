@@ -55,4 +55,8 @@ body {
   .btn-post__mobile {
     display: none;
   }
+
+  .sidebar {
+    position: sticky;
+  }
 }

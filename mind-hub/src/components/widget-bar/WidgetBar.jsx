@@ -7,25 +7,11 @@ import "./index.css";
 const WidgetBar = () => {
   const [widgetData, setWidgetData] = useState([]);
   const [inputFilter, setInputFilter] = useState("");
-  const [defaultData, setDefaultData] = useState([]);
 
   /* FETCH */
   useEffect(() => {
-    GET(`posts`).then(({ posts }) => {
-      setWidgetData(posts);
-      setDefaultData(posts);
-    });
+    GET(`posts`).then(({ posts }) => setWidgetData(posts));
   }, []);
-
-  /* FILTERED RESULTS */
-  useEffect(() => {
-    const filteredTags = defaultData.filter((post) => {
-      const tagsToString = post.tags.join();
-      return tagsToString.includes(inputFilter);
-    });
-
-    setWidgetData(filteredTags);
-  }, [inputFilter]);
 
   /* EVENTS */
   const onHandleFilter = (e) => {
@@ -49,20 +35,22 @@ const WidgetBar = () => {
       {/* CONTENT */}
       <div className="widget-content">
         <h3 className="widget-title"> Trends for you </h3>
-
-        {widgetData.map((post) => (
-          <div className="trends-wrapper">
-            <p>Trending Worldwide</p>
-            <h4 data={post} key={post.id}>
-              #{post.tags}
-            </h4>
-            <p>{post.reactions}.000+ Tweets</p>
-          </div>
-        ))}
+        {widgetData
+          .filter((post) => {
+            const tagsToString = post.tags.join();
+            return tagsToString.includes(inputFilter);
+          })
+          .map((post) => (
+            <div className="trends-wrapper">
+              <p>Trending Worldwide</p>
+              <h4 data={post} key={post.id}>
+                #{post.tags}
+              </h4>
+              <p>{post.reactions}.000+ Tweets</p>
+            </div>
+          ))}
       </div>
     </div>
   );
 };
 export default WidgetBar;
-
-// widgetData.filter((post) => post.tags.includes(inputFilter))
