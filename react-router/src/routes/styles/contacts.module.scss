@@ -1,0 +1,49 @@
+.Contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 50px;
+}
+
+.userInfo {
+  border-bottom: 1px solid #808080;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  gap: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background-color: #00000090;
+    color: #f3f3f3;
+  }
+
+  .imageWrapper {
+    background-color: rgba(207, 207, 207, 0.979);
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+
+  .userText {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+  }
+}
