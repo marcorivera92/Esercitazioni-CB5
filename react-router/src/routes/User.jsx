@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import styles from "./styles/user.module.scss";
 
@@ -41,6 +41,7 @@ const User = () => {
           </div>
         </div>
       </div>
+      <Link to="/contacts"> ⃖ Back to Contacts </Link>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, Outlet } from "react-router-dom";
 import styles from "./styles/contacts.module.scss";
 
 export default function Contacts() {
@@ -18,25 +18,28 @@ export default function Contacts() {
   };
 
   return (
-    <div className={styles.Contacts}>
-      <h1>Contacts</h1>
-      {users.map((user) => (
-        <div
-          className={styles.layout}
-          key={user.id}
-          onClick={() => userHandle(user.id)}
-        >
-          <div className={styles.userInfo}>
-            <div className={styles.imageWrapper}>
-              <img src={user.image} alt={user.firstName} />
-            </div>
-            <div className={styles.userText}>
-              <h3> {user.firstName}</h3>
-              <h3> {user.lastName}</h3>
+    <>
+      <div className={styles.Contacts}>
+        <h1>Contacts</h1>
+        {users.map((user) => (
+          <div
+            className={styles.layout}
+            key={user.id}
+            onClick={() => userHandle(user.id)}
+          >
+            <div className={styles.userInfo}>
+              <div className={styles.imageWrapper}>
+                <img src={user.image} alt={user.firstName} />
+              </div>
+              <div className={styles.userText}>
+                <h3> {user.firstName}</h3>
+                <h3> {user.lastName}</h3>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+      <Outlet />
+    </>
   );
 }

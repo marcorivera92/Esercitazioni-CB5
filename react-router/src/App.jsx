@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom";
 import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Link to="/contacts">Go to contacts</Link>
-    </div>
+    <>
+      <div className="App">
+        <h1>Home Page</h1>
+      </div>
+    </>
   );
 }
 
