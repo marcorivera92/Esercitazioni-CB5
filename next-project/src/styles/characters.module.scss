@@ -1,0 +1,24 @@
+.Characters {
+  padding: 30px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  li {
+    list-style-type: none;
+    border: 1px solid rgb(128, 115, 0);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(128, 115, 0, 0.64);
+    }
+  }
+}
