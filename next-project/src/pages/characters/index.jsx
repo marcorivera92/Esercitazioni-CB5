@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/characters.module.scss";
 
 export default function Characters({ characters }) {
@@ -5,7 +6,11 @@ export default function Characters({ characters }) {
     <div className={styles.Characters}>
       <ul>
         {characters.map((character) => (
-          <li key={character.id}>{character.name}</li>
+          <div className={styles.characterContainer} key={character.id}>
+            <Link href={`/characters/${character.id}`}>
+              <h3>{character.name}</h3>
+            </Link>
+          </div>
         ))}
       </ul>
     </div>
