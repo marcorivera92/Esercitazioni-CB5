@@ -1,0 +1,30 @@
+.TodoItem {
+  background-color: #21212a;
+  padding: 20px 12px;
+  border-radius: 16px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.142);
+  cursor: pointer;
+
+  p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  &:hover {
+    background-color: #ff759eba;
+  }
+
+  &:active {
+    background-color: #18c102;
+  }
+}
+
+.statusDone {
+  text-decoration: line-through;
+  opacity: 0.5;
+  p {
+    font-weight: 400;
+    font-size: 1.15rem;
+  }
+}
