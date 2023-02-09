@@ -1,0 +1,26 @@
+.App {
+  max-height: 100vh;
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 676px) {
+  .App {
+    main {
+      flex-direction: row;
+    }
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .App {
+    main {
+      flex-direction: row;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+}

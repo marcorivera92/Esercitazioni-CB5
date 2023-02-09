@@ -1,0 +1,43 @@
+.NoteItem {
+  width: 400px;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  button {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .noteHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 676px) {
+  .NoteItem {
+    width: 700px;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
